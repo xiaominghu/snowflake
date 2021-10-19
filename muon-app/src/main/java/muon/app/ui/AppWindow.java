@@ -127,9 +127,9 @@ public class AppWindow extends JFrame {
 
 	private JPanel createSessionPanel() {
 		JLabel lblSession = new JLabel("Sessions");
-		lblSession.setFont(App.SKIN.getDefaultFont().deriveFont(14.0f));
+		lblSession.setFont(App.SKIN.getDefaultFont().deriveFont(16.0f));
 		JButton btnNew = new JButton("+ New");
-		btnNew.setFont(App.SKIN.getDefaultFont().deriveFont(12.0f));
+		btnNew.setFont(App.SKIN.getDefaultFont().deriveFont(14.0f));
 		btnNew.addActionListener(e -> {
 			SessionInfo info = new NewSessionDlg(this).newSession();
 			if (info != null) {
@@ -138,7 +138,7 @@ public class AppWindow extends JFrame {
 		});
 
 		JButton btnSettings = new JButton();
-		btnSettings.setFont(App.SKIN.getIconFont().deriveFont(12.0f));
+		btnSettings.setFont(App.SKIN.getIconFont().deriveFont(14.0f));
 		btnSettings.setText(FontAwesomeContants.FA_COG);
 		btnSettings.addActionListener(e -> {
 			openSettings(null);

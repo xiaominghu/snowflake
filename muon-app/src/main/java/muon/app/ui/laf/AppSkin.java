@@ -84,7 +84,7 @@ public abstract class AppSkin {
 			// "+font.getFontName());
 			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 			ge.registerFont(font);
-			return font.deriveFont(Font.PLAIN, 12.0f);
+			return font.deriveFont(Font.PLAIN, 16.0f);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -94,7 +94,7 @@ public abstract class AppSkin {
 	protected Font loadFontAwesomeFonts() {
 		try (InputStream is = AppSkin.class.getResourceAsStream("/fonts/fontawesome-webfont.ttf")) {
 			Font font = Font.createFont(Font.TRUETYPE_FONT, is);
-			return font.deriveFont(Font.PLAIN, 14f);
+			return font.deriveFont(Font.PLAIN, 16f);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -126,7 +126,7 @@ public abstract class AppSkin {
 	}
 
 	public Font getDefaultFont() {
-		return UIManager.getFont("defaultFont");
+		return UIManager.getFont("defaultFont").deriveFont(16.0f);
 	}
 
 	public Color getInfoTextForeground() {
@@ -540,7 +540,7 @@ public abstract class AppSkin {
 //			g.setColor(c1);
 //			g.drawLine(width - 1, 3, width - 1, height - 6);
 		};
-		uiDefaults.put("TableHeader.font", new Font(Font.DIALOG, Font.PLAIN, 14));
+		uiDefaults.put("TableHeader.font", new Font(Font.DIALOG, Font.PLAIN, 16));
 		uiDefaults.put("TableHeader.background", defaults.getColor("control"));// new
 																				// Color(240,
 		// 240, 240));

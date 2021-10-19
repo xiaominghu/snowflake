@@ -60,7 +60,7 @@ public class TableCellLabelRenderer implements TableCellRenderer {
 		label = new JLabel();
 		label.setForeground(foreground);
 		label.setBorder(new EmptyBorder(5, 5, 5, 5));
-		label.setFont(new Font(Font.DIALOG, Font.PLAIN, 14));
+		label.setFont(new Font(Font.DIALOG, Font.PLAIN, 16));
 		label.setOpaque(true);
 	}
 

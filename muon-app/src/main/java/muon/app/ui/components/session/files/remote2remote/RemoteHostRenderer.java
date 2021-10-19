@@ -27,8 +27,8 @@ public class RemoteHostRenderer implements ListCellRenderer<RemoteServerEntry> {
 		lblHost = new JLabel();
 
 		lblIcon.setFont(App.SKIN.getIconFont().deriveFont(24.0f));
-		lblText.setFont(App.SKIN.getDefaultFont().deriveFont(14.0f));
-		lblHost.setFont(App.SKIN.getDefaultFont().deriveFont(12.0f));
+		lblText.setFont(App.SKIN.getDefaultFont().deriveFont(16.0f));
+		lblHost.setFont(App.SKIN.getDefaultFont().deriveFont(14.0f));
 
 		lblText.setText("Sample server");
 		lblHost.setText("server host");
