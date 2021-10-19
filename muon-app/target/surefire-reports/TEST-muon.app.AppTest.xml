@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="muon.app.AppTest" time="0.003" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="muon.app.AppTest" time="0.002" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -21,7 +21,7 @@
     <property name="user.country" value="US"/>
     <property name="localRepository" value="/home/huxiaomi/.m2/repository"/>
     <property name="sun.boot.library.path" value="/opt/jdk-14.0.1/lib"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/huxiaomi/work/snowflake/muon-app/target/surefire 2021-10-19T11-12-24_958-jvmRun1 surefire15184809739998222117tmp surefire_016824449614258994073tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/huxiaomi/work/snowflake/muon-app/target/surefire 2021-10-19T13-58-37_073-jvmRun1 surefire7598736223708151751tmp surefire_02242472287879816168tmp"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="jdk.debug" value="release"/>

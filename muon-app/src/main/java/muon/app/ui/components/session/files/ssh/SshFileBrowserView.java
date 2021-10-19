@@ -162,6 +162,7 @@ public class SshFileBrowserView extends AbstractFileBrowserView {
 		fileBrowser.getHolder().EXECUTOR.submit(() -> {
 			this.fileBrowser.disableUi();
 			try {
+				//Thread.sleep(100000000);
 				while (!fileBrowser.isCloseRequested()) {
 					System.out.println("Listing files now ...");
 					try {

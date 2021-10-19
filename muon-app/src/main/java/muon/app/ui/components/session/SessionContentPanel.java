@@ -136,7 +136,7 @@ public class SessionContentPanel extends JPanel implements PageHolder, CachedCre
 
 		this.add(this.rootPane);
 
-		showPage(this.pages[0].getId());
+		showPage(this.pages[1].getId());
 
 		if (info.getPortForwardingRules() != null && info.getPortForwardingRules().size() > 0) {
 			this.pfSession = new PortForwardingSession(info, App.getInputBlocker(), this);
