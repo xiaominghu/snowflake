@@ -21,7 +21,7 @@
     <property name="user.country" value="US"/>
     <property name="localRepository" value="/home/huxiaomi/.m2/repository"/>
     <property name="sun.boot.library.path" value="/opt/jdk-14.0.1/lib"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/huxiaomi/work/snowflake/muon-app/target/surefire 2021-10-19T13-58-37_073-jvmRun1 surefire7598736223708151751tmp surefire_02242472287879816168tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/huxiaomi/work/snowflake/muon-app/target/surefire 2021-10-19T15-04-50_693-jvmRun1 surefire14683096260401606550tmp surefire_06208510855349876804tmp"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="jdk.debug" value="release"/>

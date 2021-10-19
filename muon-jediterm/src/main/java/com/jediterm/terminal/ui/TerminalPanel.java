@@ -56,7 +56,7 @@ public class TerminalPanel extends JComponent
 	private int myDescent = 0;
 	protected Dimension myCharSize = new Dimension();
 	private boolean myMonospaced;
-	protected Dimension myTermSize = new Dimension(80, 24);
+	protected Dimension myTermSize = new Dimension(180, 50);
 
 	private TerminalStarter myTerminalStarter = null;
 
@@ -473,7 +473,8 @@ public class TerminalPanel extends JComponent
 	static class WeakRedrawTimer implements ActionListener {
 
 		private WeakReference<TerminalPanel> ref;
-
+		boolean panelResized = false;
+		int tickcount = 0;
 		public WeakRedrawTimer(TerminalPanel terminalPanel) {
 			this.ref = new WeakReference<TerminalPanel>(terminalPanel);
 		}
@@ -490,6 +491,11 @@ public class TerminalPanel extends JComponent
 					} catch (Exception ex) {
 						LOG.error("Error while terminal panel redraw", ex);
 					}
+				}
+				tickcount++;
+				if (!panelResized && tickcount > 100) {
+					terminalPanel.sizeTerminalFromComponent();
+					panelResized = true;
 				}
 			} else { // terminalPanel was garbage collected
 				Timer timer = (Timer) e.getSource();
@@ -618,7 +624,7 @@ public class TerminalPanel extends JComponent
 				: null;
 	}
 
-	private void sizeTerminalFromComponent() {
+	public void sizeTerminalFromComponent() {
 		if (myTerminalStarter != null) {
 			Dimension newSize = getTerminalSizeFromComponent();
 			if (newSize != null) {
